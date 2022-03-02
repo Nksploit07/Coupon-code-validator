@@ -1,7 +1,7 @@
 # Coupon code validator 
  
 
-# Requirements to run this application
+# Requirements needs to run this application
 
 We recommend using the latest version of Python. Flask supports Python 3.6 and newer.
 
