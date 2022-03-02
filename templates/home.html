@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>antistack</title>
+	<link rel="stylesheet" href="{{ url_for('static',filename='home.css') }}">
+</head>
+<body>
+	<div class="nav">
+		<a href="http://127.0.0.1:5000/coupon">Coupons</a>
+	</div>
+<div class="cart">
+	<form class="cart-frm" method="Post" action="{{url_for('validate')}}">
+		Cart Amount: <input type="number" placeholder="Enter the total amount" name="amt"><br>
+		Coupon code: <input type="text" name="ccode" placeholder="Enter the Coupon code"><br>
+		<button type="submit">apply</button>
+	</form>
+
+	{{msg}}{{amt}}
+</div>
+</body>
+</html>

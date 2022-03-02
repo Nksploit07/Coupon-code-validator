@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coupon</title>
+	<link rel="stylesheet" href="{{ url_for('static',filename='coupon.css') }}">
+
+
+</head>
+<body>
+	<a href="{{url_for('createcoupon')}}">Create coupon</a>
+<div class="container">
+{% for row in rows %}
+<div class="card">
+	<h2>{{row[2]}} {{row[4]}}</h2>
+	<p>{{row[1]}}</p>
+	<h5>On the purchese of {{row[5]}} Rs above.</h5>
+	<h4>Coupon Code</h4><input type="text" name="code" value="{{row[0]}}" readonly >
+	<h3 class="exp">Expired On {{row[3]}} </h3>
+</div>
+{% endfor %}
+
+</div>
+
+</body>
+</html>

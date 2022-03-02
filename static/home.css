@@ -1,0 +1,16 @@
+*{
+	margin-top: 10px;
+	padding-top:0;
+}
+
+.nav{
+	padding: 50px;
+
+}
+a{
+	float: right;
+	text-decoration: none;
+}
+form{
+	margin-left: 50px;
+}
